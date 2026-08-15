@@ -60,11 +60,11 @@ static const uint8_t ADC2 = 8;
 #define GPS_SERIAL_TX SERIAL_TX
 #define GPS_SERIAL_RX SERIAL_RX
 #define HAS_BTN 1
-#define SEL_BTN 34
-#define UP_BTN 36
-#define DW_BTN 35
-#define R_BTN 39
-#define L_BTN 13
+#define SEL_BTN 14
+#define UP_BTN 12
+#define DW_BTN 13
+#define R_BTN 33
+#define L_BTN 32
 #define HAS_5_BUTTONS
 #define BTN_ALIAS "\"Ok\""
 #define BTN_ACT LOW
@@ -73,14 +73,14 @@ static const uint8_t ADC2 = 8;
 #define LED_ON HIGH
 #define LED_OFF LOW
 
-#define CC1101_GDO0_PIN -1
-#define CC1101_SS_PIN -1
+#define CC1101_GDO0_PIN 25
+#define CC1101_SS_PIN 26
 #define CC1101_MOSI_PIN SPI_MOSI_PIN
 #define CC1101_SCK_PIN SPI_SCK_PIN
 #define CC1101_MISO_PIN SPI_MISO_PIN
 
-#define NRF24_CE_PIN -1
-#define NRF24_SS_PIN -1
+#define NRF24_CE_PIN 5
+#define NRF24_SS_PIN 27
 #define NRF24_MOSI_PIN SPI_MOSI_PIN
 #define NRF24_SCK_PIN SPI_SCK_PIN
 #define NRF24_MISO_PIN SPI_MISO_PIN
@@ -90,10 +90,10 @@ static const uint8_t ADC2 = 8;
 #define FG 2
 
 #define HAS_SCREEN 1
-#define ROTATION 0
+#define ROTATION 1
 #define MINBRIGHT 160
 
-#define SDCARD_CS 4
+#define SDCARD_CS -1
 #define SDCARD_SCK 18
 #define SDCARD_MISO 19
 #define SDCARD_MOSI 23
